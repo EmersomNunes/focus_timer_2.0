@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus Timer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="./js/main.js" defer></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <div class="timer">
+            <span id="minutes">00</span>
+            <span class="pointer">:</span>
+            <span id="seconds">00</span>
+          <div class="buttons">
+            <button data-action="play" class="ph-bold ph-play-circle"></button>
+            <button data-action="pause" class="ph-bold ph-stop-circle secondary"></button>
+            <button data-action="increase" class="ph ph-plus-circle"></button>
+            <button data-action="decrease" class="ph ph-minus-circle"></button>
+          </div>
+        </div>
+        <div class="sons">
+          <button data-action="soundTree" id="tree" class="ph ph-tree"></button>
+          <button data-action="soundRain" id="cloud" class="ph ph-cloud-rain"></button>
+          <button data-action="soundCoffeShop" id="storeCoffe" class="ph ph-storefront"></button>
+          <button data-action="soundFire" id="fireland" class="ph ph-fire"></button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
