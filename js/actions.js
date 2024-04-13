@@ -18,8 +18,8 @@ export function increase() {
 
   minutes = minutes + 5;
 
-  if (minutes >= 60) {
-    return (minutes = 60);
+  if (minutes >= 60.1) {
+    return minutes = 60;
   }
 
   timer.updateDisplay(minutes, seconds);

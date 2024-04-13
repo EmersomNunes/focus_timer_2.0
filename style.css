@@ -6,7 +6,35 @@
 
 html {
   font-size: 62.5%;
-  --color-text: #323238;
+  --bg-color:hsl(194, 5%, 7%);
+  --text-color: hsl(240, 40%, 98%);
+}
+
+html.light {
+  --bg-color: hsl(240, 40%, 98%);
+  --text-color:hsl(194, 5%, 7%);
+}
+
+html.light .ph-sun,
+html:not(.light) .ph-moon {
+  display: none;
+}
+
+#toggle-mode {
+  position: absolute;
+  right: 3.2rem;
+  top: 3.2rem;
+  font-size: 3.2rem;
+  line-height: 0;
+
+  border: none;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 body,
@@ -31,7 +59,7 @@ button {
 .timer #minutes,
 #seconds,
 .pointer {
-  color: var(--color-text);
+  color: var(--text-color);
   font-size: 12.6rem;
   text-align: center;
   font-weight: 500;
@@ -46,7 +74,7 @@ button {
 }
 
 .buttons button {
-  color: var(--color-text);
+  color: var(--text-color);
   font-size: 4.8rem;
   background-color: transparent;
   border: none;
